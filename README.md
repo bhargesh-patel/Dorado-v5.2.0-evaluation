@@ -14,7 +14,7 @@ Using `--modified-bases-threshold 0` sets the reporting modification probability
 
 Convert the base called sam file to fastq with [SAMtools](https://github.com/samtools/samtools):
 ```
-samtools fastq -T "*" —- data/IVT.sam > data/IVT.fastq
+samtools fastq -T "*" data/IVT.sam > data/IVT.fastq
 ```
 
 ### Step 2: Alignment
