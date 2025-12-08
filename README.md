@@ -15,7 +15,7 @@ To perform modification-aware sup basecalling with Dorado v5.2.0 (as of December
 ### Step 2: Convert the base called sam file to fastq with [SAMtools](https://github.com/samtools/samtools):
 ```
 samtools fastq -T "*" —- data/IVT.sam > data/IVT.fastq
-'''
+```
 
 ### Step 3: Alignment
 
