@@ -2,9 +2,9 @@
 
 A pipeline for modification-aware base calling, alignment, and prediction of nucleotide modifications in tRNAs from ONT direct RNA sequencing reads (**SQK-RNA004**)
 
-##Usage
+## Usage
 
-###Step 1: Basecalling
+### Step 1: Basecalling
 
 To perform modification-aware sup basecalling with Dorado v5.2.0 (as of December 2026 supports inosine_m6A_2OmeA, pseU_2OmeU, m5C_2OmeC, 2OmeG, [Dorado](https://github.com/nanoporetech/dorado)):
 ```
@@ -12,12 +12,12 @@ To perform modification-aware sup basecalling with Dorado v5.2.0 (as of December
 ```
 `--modified-bases-threshold 0` sets the reporting modification probability threshold to 0.
 
-###Step 2: Convert the base called sam file to fastq with [SAMtools](https://github.com/samtools/samtools):
+### Step 2: Convert the base called sam file to fastq with [SAMtools](https://github.com/samtools/samtools):
 ```
 samtools fastq -T "*" —- data/IVT.sam > data/IVT.fastq
 '''
 
-###Step 3: Alignment
+### Step 3: Alignment
 
 For IVT tRNAs, we recommend [BWA-MEM](https://github.com/lh3/bwa) based on evaluation performed by [Lucas, M.C., Pryszcz, L.P., Medina, R. et al. 2024](https://doi.org/10.1038/s41587-023-01743-6):
 ```
