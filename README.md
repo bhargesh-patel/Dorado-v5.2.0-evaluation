@@ -6,7 +6,7 @@ A pipeline for modification-aware base calling, alignment, and prediction of nuc
 
 ### Step 1: Basecalling
 
-To perform modification-aware sup basecalling with Dorado v5.2.0 (as of December 2026 supports inosine_m6A_2OmeA, pseU_2OmeU, m5C_2OmeC, 2OmeG, [Dorado](https://github.com/nanoporetech/dorado)):
+To perform modification-aware sup basecalling with Dorado v5.2.0 (as of December 2025 [Dorado](https://github.com/nanoporetech/dorado) supports 8 modifications - pseU_2OmeU, m5C_2OmeC, inosine_m6A_2OmeA, 2OmeG):
 ```
 ~/dorado basecaller rna004_130bps_sup@v5.2.0 --modified-bases m5C_2OmeC inosine_m6A_2OmeA pseU_2OmeU 2OmeG  --emit-moves --modified-bases-threshold 0 --emit-sam data/IVT.pod5 > data/IVT.sam
 ```
