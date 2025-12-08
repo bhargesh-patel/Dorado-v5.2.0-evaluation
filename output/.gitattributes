@@ -1,0 +1,2 @@
+/Users/b/Downloads/B/Downloads/MS/Dorado-5.2[[:space:]]paper/Final/GitHub/Dorado-v5.2.0-evaluation/output/trna2mods.pckl filter=lfs diff=lfs merge=lfs -text
+/Users/b/Downloads/B/Downloads/MS/Dorado-5.2[[:space:]]paper/Final/GitHub/Dorado-v5.2.0-evaluation/output/AS_thres/WT_q_WT_q-reverse_parasail_scores.csv filter=lfs diff=lfs merge=lfs -text

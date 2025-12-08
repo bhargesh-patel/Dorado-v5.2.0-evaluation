@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+output/AS_thres/*.csv filter=lfs diff=lfs merge=lfs -text
+output/trna2mods.pckl filter=lfs diff=lfs merge=lfs -text
+data/WT_q_align_final.sam filter=lfs diff=lfs merge=lfs -text
+output/AS_thres/WT_q_WT_q-reverse_parasail_scores.csv filter=lfs diff=lfs merge=lfs -text
+data/IVT_align_final.sam filter=lfs diff=lfs merge=lfs -text
+data/WT_align_final.sam filter=lfs diff=lfs merge=lfs -text
