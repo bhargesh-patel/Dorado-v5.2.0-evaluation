@@ -88,5 +88,16 @@ Calculate the nucleotide mismatch and deletion rates at each position in referen
 python py_scripts/calc_mis_del_rates.py data/WT_align_final.sam data/reference_comb_rng.fasta output/mis_del_rates_WT.csv
 ```
 
+### Step 6: Plotting nanopore ionic current signals
 
+Extract nanopore ionic current signals using:
+```
+python py_scripts/signal_tools.py extract --samples IVT,WT --ref data/reference_comb_rng.fasta --pod5 data/IVT.pod5,data/WT.pod5 --subsample 200 --sam_dir data/ --annotation data/SI_table1_intron.xlsx
+```
+This generates a file `output/signals_IVT,WT_200.pckl` containing extracted signals for all tRNAs. The --tRNA can optionally be used to extract the signals for a single tRNA. 
 
+Then plot the extracted signals:
+```
+python py_scripts/signal_tools.py plot --sample1 IVT --sample2 WT --signals output/signals_IVT,WT_200.pckl --trna tRNA-Lys-CTT-1-1 --pos 1 --kmer 11 --annotation data/SI_table1_intron.xlsx
+```
+This generates an image `output/Signal_plots/IVT_WT_Lys-CTT-1_1_11mer.svg` showing a comparison of the ionic current signals.
