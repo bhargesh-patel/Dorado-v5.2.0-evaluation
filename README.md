@@ -1,5 +1,5 @@
 # Evaluation of Dorado v5.2.0 *de novo* basecalling models for the detection of tRNA modifications using RNA004 chemistry
-[![https://doi.org/10.64898/2025.12.09.693013](https://img.shields.io/badge/DOI-https://doi.org/10.64898/2025.12.09.693013-rgb%28255%2C%200%2C%200%2C%201%29)](https://doi.org/10.1186/s12864-026-12893-7)
+[![https://doi.org/10.64898/2025.12.09.693013](https://img.shields.io/badge/DOI-10.1186/s12864--026--12893--7-rgb%28255%2C%200%2C%200%2C%201%29)](https://doi.org/10.1186/s12864-026-12893-7)
 
 A pipeline for modification-aware basecalling, alignment, and prediction of nucleotide modifications in tRNAs from ONT direct RNA sequencing reads (**SQK-RNA004**)
 
